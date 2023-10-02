@@ -1,0 +1,77 @@
+@import "./../../css/styles.css";
+/* CSS for Resume component */
+.mi-resume-area {
+  background-color: #f8f8f8;
+}
+.mi-sectiontitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.mi-sectiontitle h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.mi-sectiontitle span {
+  display: block;
+  font-size: 14px;
+}
+.mi-smalltitle {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.mi-smalltitle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(126, 213, 111, 0.8);
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.mi-smalltitle-icon i {
+  color: #fff;
+  font-size: 28px;
+}
+.mi-smalltitle h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.mi-resume {
+  display: flex;
+  margin-bottom: 30px;
+}
+.mi-resume .mi-resume-summary {
+  width: 130px;
+}
+.mi-resume .mi-resume-year {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.mi-resume .mi-resume-details {
+  flex: 1;
+  margin-left: 30px;
+}
+.mi-resume .mi-resume-details h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.mi-resume .mi-resume-details h6 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.mi-resume .mi-resume-details p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 0;
+}
+.mi-resume-wrapper {
+  margin-top: 30px;
+}

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import myImg from "../../img/about_img.jpg";
 import "../../css/styles.css";
 import Resume from "../../assets/SAMANEH_DABBAGHCHI_Resume_16-09-2023.pdf";
@@ -22,6 +22,10 @@ const AboutMe = () => {
         const percent = el.getAttribute("data-width");
         el.style.width = percent + "%";
       }
+      window.addEventListener("load", progressLines);
+      return () => {
+        window.removeEventListener("load", progressLines);
+      };
     });
   }, []);
 

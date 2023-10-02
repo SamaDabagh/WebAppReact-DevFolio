@@ -18,11 +18,11 @@ const Weather = () => {
   };
 
   return (
-    <div>
-      <div className="feature-box weather_container">
+    <div className="form__group">
+      <div className="feature-box weather_container form__group">
         <h3>Weather Data</h3>
         <input
-          className="weather_input"
+          className="weather_input form__input"
           placeholder="Enter City ..."
           onChange={(e) => setCity(e.target.value)}
           value={city}

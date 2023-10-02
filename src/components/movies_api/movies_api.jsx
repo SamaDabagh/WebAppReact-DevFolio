@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const Movies_api = () => {
   const [movies, setMovies] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
   function getMovies() {
     const options = {
       method: "GET",

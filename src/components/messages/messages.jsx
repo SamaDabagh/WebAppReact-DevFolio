@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Pagination from "../pagination/Pagination";
 const Messages = () => {
   const [messages, setMessages] = useState([{}]);
   const getMessages = async () => {
@@ -27,6 +28,9 @@ const Messages = () => {
             </li>
           ))}
         </ul>
+        <div>
+          <Pagination data={getMessages} />
+        </div>
       </div>
       <div className="form__group msg_btn">
         <button type="submit" className="btn btn--white" onClick={getMessages}>

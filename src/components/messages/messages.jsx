@@ -23,7 +23,7 @@ const Messages = () => {
             <li key={index} className="massage-sub-box">
               <p>{message.fullName}</p>
               <p>{message.email}</p>
-              <p> {message.phoneNumber}</p>
+              {/* <p> {message.phoneNumber}</p> */}
               <p> {message.message}</p>
             </li>
           ))}

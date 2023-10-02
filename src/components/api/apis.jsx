@@ -1,8 +1,8 @@
 import React from "react";
 import Messages from "../messages/messages";
 import Weather from "../weather/weather";
-import Movies from "../movies_api/movies_api";
-import Word_API from "../word-api/word-api";
+// import Movies from "../movies_api/movies_api";
+// import Word_API from "../word-api/word-api";
 const Apis = ({ formData }) => {
   return (
     <div>
@@ -14,8 +14,8 @@ const Apis = ({ formData }) => {
 
           <div className="col-1-of-2">
             <Weather />
-            <Movies />
-            {/* <Word_API /> */}
+            {/* <Movies />
+            <Word_API /> */}
           </div>
         </div>
       </section>

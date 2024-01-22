@@ -17,16 +17,25 @@ const AboutMe = () => {
     }
 
     const progressLines = document.querySelectorAll(".progress_line");
-    progressLines.forEach(function (el) {
-      if (isElementInViewport(el)) {
-        const percent = el.getAttribute("data-width");
-        el.style.width = percent + "%";
-      }
-      window.addEventListener("load", progressLines);
-      return () => {
-        window.removeEventListener("load", progressLines);
-      };
-    });
+
+    function updateProgress() {
+      progressLines.forEach(function (el) {
+        if (isElementInViewport(el)) {
+          const percent = el.getAttribute("data-width");
+          el.style.width = percent + "%";
+        }
+      });
+    }
+
+    updateProgress(); // Initial update
+
+    window.addEventListener("scroll", updateProgress);
+    // window.addEventListener("resize", updateProgress);
+
+    return () => {
+      window.removeEventListener("scroll", updateProgress);
+      // window.removeEventListener("resize", updateProgress);
+    };
   }, []);
 
   return (
@@ -76,6 +85,21 @@ const AboutMe = () => {
                     <h6 className="skill_title">UI/UX Design</h6>
                     <div className="skill_percentage">
                       <p>
+                        <span className="counter">80</span>%
+                      </p>
+                    </div>
+                  </div>
+                  <div className="skill_bar">
+                    <div className="bar_inner">
+                      <div className="bar progress_line" data-width="80"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="skill_item mt-20">
+                  <div className="skill_header">
+                    <h6 className="skill_title">Web Design</h6>
+                    <div className="skill_percentage">
+                      <p>
                         <span className="counter">85</span>%
                       </p>
                     </div>
@@ -88,16 +112,16 @@ const AboutMe = () => {
                 </div>
                 <div className="skill_item mt-20">
                   <div className="skill_header">
-                    <h6 className="skill_title">Web Design</h6>
+                    <h6 className="skill_title">React.js</h6>
                     <div className="skill_percentage">
                       <p>
-                        <span className="counter">75</span>%
+                        <span className="counter">90</span>%
                       </p>
                     </div>
                   </div>
                   <div className="skill_bar">
                     <div className="bar_inner">
-                      <div className="bar progress_line" data-width="75"></div>
+                      <div className="bar progress_line" data-width="90"></div>
                     </div>
                   </div>
                 </div>

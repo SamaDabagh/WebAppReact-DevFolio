@@ -151,7 +151,7 @@ const ContactUs = ({ onFormSubmit }) => {
               </li>
               <li className="service_icon2">
                 <a
-                  href="https://www.linkedin.com/in/samaneh-dabbaghchi/"
+                  href="https://www.linkedin.com/in/sama-dabagh/"
                   target="blank"
                 >
                   <i className="lni lni-linkedin"></i>
